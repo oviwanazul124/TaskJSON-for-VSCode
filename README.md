@@ -1,2 +1,2 @@
-# TaskJSON-for-VSCode-for-EducandOS
-Several task.json files for VSCode running on EducandOS operating system
+# TaskJSON-for-VSCode
+Several task.json files for VSCode running on Ubuntu 20.04 operating system

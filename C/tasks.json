@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    	{
+        	"label": "Compilar un programa en C",
+        	"type": "shell",
+        	"command": "gcc",
+        	"args": [
+            	"-g",
+            	"${file}",
+            	"-o",
+            	"${fileDirname}/${fileBasenameNoExtension}"
+        	],
+        	"group": {
+            	"kind": "build",
+            	"isDefault": true
+        	},
+        	"problemMatcher": ["$gcc"],
+        	"detail": "Compilación del programa en C con GCC"
+    	},
+        {
+            "label": "Lanzar el programa en C",
+            "type": "shell",
+            "command": "./${fileBasenameNoExtension}",
+            "dependsOn":  [
+                "Compilar un programa en C"
+            ],
+            "problemMatcher": []
+        }
+	]
+}
+
